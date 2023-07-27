@@ -1,0 +1,14 @@
+{
+    "name": "webhook-server",
+    "version": "1.0.0",
+    "description": "Serveur webhook pour gérer les réponses de l'API Replicate",
+    "main": "webhook.js",
+    "scripts": {
+      "start": "node webhook.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "axios": "^0.24.0"
+    }
+  }
+  
