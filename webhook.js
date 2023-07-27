@@ -4,6 +4,9 @@ const axios = require('axios');
 const app = express();
 const port = 3000; // Choisissez le port que vous souhaitez utiliser pour votre serveur webhook
 
+// Middleware pour parser le corps de la requête au format JSON
+app.use(express.json());
+
 // Endpoint pour le webhook
 app.post('/webhook', async (req, res) => {
   try {
